@@ -1,10 +1,10 @@
-from persistable.plot import StatusbarHoverManager, plot_hilbert_function
-from persistable.borrowed._hdbscan_boruvka import (
+from .plot import StatusbarHoverManager, plot_hilbert_function
+from .borrowed._hdbscan_boruvka import (
     KDTreeBoruvkaAlgorithm,
     BallTreeBoruvkaAlgorithm,
 )
-from persistable.borrowed.dense_mst import stepwise_dendrogram_with_core_distances
-from persistable.aux import lazy_intersection
+from .borrowed.dense_mst import stepwise_dendrogram_with_core_distances
+from .aux import lazy_intersection
 import numpy as np
 import warnings
 import matplotlib.pyplot as plt
